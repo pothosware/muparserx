@@ -1,6 +1,5 @@
-muparserx (4.0.5) unstable; urgency=low
+muparserx (4.0.7) unstable; urgency=low
 
-  * TODO pending release
+  * Tagged release v4.0.7
 
- -- Ingo Berg <muparserx@beltoforion.de>  Sat, 12 Dec 2015 19:33:59 -0800
-
+ -- Ingo Berg <muparserx@beltoforion.de>  Sun, 03 Apr 2016 15:23:20 -0700
