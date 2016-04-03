@@ -8,12 +8,8 @@
   |  Y Y  \  |  /    |     / __ \|  | \/\___ \\  ___/|  | \/     \ 
   |__|_|  /____/|____|    (____  /__|  /____  >\___  >__| /___/\  \
         \/                     \/           \/     \/           \_/
-                                       Copyright (C) 2013 Ingo Berg
+                                       Copyright (C) 2016, Ingo Berg
                                        All rights reserved.
-
-  muParserX - A C++ math parser library with array and string support
-  Copyright (c) 2013, Ingo Berg
-  All rights reserved.
 
   Redistribution and use in source and binary forms, with or without 
   modification, are permitted provided that the following conditions are met:
@@ -100,7 +96,7 @@ MUP_NAMESPACE_START
     MUP_UNARY_FUNC(FunLn,    "ln",    std::log,   "Natural logarithm")
     // square root
     MUP_UNARY_FUNC(FunSqrt,  "sqrt",  std::sqrt,  "sqrt(x) - square root of x")
-    MUP_UNARY_FUNC(FunCbrt,  "cbrt",  std::sqrt,  "cbrt(x) - cubic root of x")
+    MUP_UNARY_FUNC(FunCbrt,  "cbrt",  std::cbrt,  "cbrt(x) - cubic root of x")
     MUP_UNARY_FUNC(FunExp,   "exp",   std::exp,   "exp(x) - e to the power of x")
     MUP_UNARY_FUNC(FunAbs,   "abs",   std::fabs,  "abs(x) - absolute value of x")
 #undef MUP_UNARY_FUNC
@@ -127,6 +123,9 @@ MUP_NAMESPACE_START
 
     MUP_BINARY_FUNC(FunPow,  "pow",  std::pow,  "pow(x, y) - raise x to the power of y")
     MUP_BINARY_FUNC(FunHypot,  "hypot",  std::hypot,  "hypot(x, y) - compute the length of the vector x,y")
+    MUP_BINARY_FUNC(FunAtan2, "atan2", std::atan2, "arcus tangens with quadrant fix")
+    MUP_BINARY_FUNC(FunFmod,  "fmod",  std::fmod,  "fmod(x, y) - floating point remainder of x / y")
+    MUP_BINARY_FUNC(FunRemainder,  "remainder",  std::remainder,  "remainder(x, y) - IEEE remainder of x / y")
 #undef MUP_BINARY_FUNC
 
 MUP_NAMESPACE_END

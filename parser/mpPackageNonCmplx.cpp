@@ -5,12 +5,8 @@
   |  Y Y  \  |  /    |     / __ \|  | \/\___ \\  ___/|  | \/     \ 
   |__|_|  /____/|____|    (____  /__|  /____  >\___  >__| /___/\  \
         \/                     \/           \/     \/           \_/
-                                       Copyright (C) 2013 Ingo Berg
+                                       Copyright (C) 2016, Ingo Berg
                                        All rights reserved.
-
-  muParserX - A C++ math parser library with array and string support
-  Copyright (c) 2013, Ingo Berg
-  All rights reserved.
 
   Redistribution and use in source and binary forms, with or without 
   modification, are permitted provided that the following conditions are met:
@@ -83,6 +79,9 @@ void PackageNonCmplx::AddToParser(ParserXBase *pParser)
   // binary functions
   pParser->DefineFun(new FunPow());
   pParser->DefineFun(new FunHypot());
+  pParser->DefineFun(new FunAtan2());
+  pParser->DefineFun(new FunFmod());
+  pParser->DefineFun(new FunRemainder());
 
   // Operator callbacks
   pParser->DefineInfixOprt(new OprtSign());
