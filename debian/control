@@ -5,7 +5,7 @@ Maintainer: Ingo Berg <muparserx@beltoforion.de>
 Build-Depends:
     debhelper (>= 9.0.0),
     cmake (>= 2.8.0)
-Standards-Version: 3.9.6
+Standards-Version: 3.9.8
 Homepage: http://articles.beltoforion.de/article.php?a=muparserx
 Vcs-Git: https://github.com/beltoforion/muparserx.git
 Vcs-Browser: https://github.com/beltoforion/muparserx
@@ -14,7 +14,7 @@ Package: libmuparserx4.0.7
 Section: libs
 Architecture: any
 Multi-Arch: same
-Pre-Depends: multiarch-support, ${misc:Pre-Depends}
+Pre-Depends: ${misc:Pre-Depends}
 Depends:
      ${shlibs:Depends},
      ${misc:Depends}
