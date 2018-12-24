@@ -10,7 +10,7 @@ Homepage: http://articles.beltoforion.de/article.php?a=muparserx
 Vcs-Git: https://github.com/beltoforion/muparserx.git
 Vcs-Browser: https://github.com/beltoforion/muparserx
 
-Package: libmuparserx4.0.7
+Package: libmuparserx4.0.8
 Section: libs
 Architecture: any
 Multi-Arch: same
@@ -25,7 +25,7 @@ Package: libmuparserx-dev
 Section: libdevel
 Architecture: any
 Depends:
-    libmuparserx4.0.7 (= ${binary:Version}),
+    libmuparserx4.0.8 (= ${binary:Version}),
     ${shlibs:Depends},
     ${misc:Depends}
 Description: muparserx - development files
